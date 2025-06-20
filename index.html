@@ -142,11 +142,35 @@ footer {
   </div>
 
   <div class="section">
-    <h2>📬 Contact</h2>
-    <p>Email: <strong>bmonkhouselyrics@gmail.com</strong><br>
-    Instagram: <strong>@BSideGameStations</strong><br>
-Website: <strong><a href="https://braemonk.github.io/B-SideCustomGameStations/" target="_blank" style="color:#0077cc; text-decoration: none;">Coming Soon</a></strong></p></p>
-  </div>
+  <h2>📝 Place Your Order</h2>
+  <form action="https://formspree.io/f/moqglzqq" method="POST">
+    <input type="hidden" name="_subject" value="New B-Side Game Stick Order">
+    <input type="hidden" name="_cc" value="bsidecustomgames@gmail.com">
+    
+    <label for="name">Your Name:</label><br>
+    <input type="text" name="name" required style="width: 100%; padding: 10px; margin: 8px 0;"><br>
+
+    <label for="email">Your Email Address:</label><br>
+    <input type="email" name="_replyto" required style="width: 100%; padding: 10px; margin: 8px 0;"><br>
+
+    <label for="package">Package Choice:</label><br>
+    <select name="package" required style="width: 100%; padding: 10px; margin: 8px 0;">
+      <option value="Base Stick - $100 CAD">Base Stick - $100 CAD</option>
+      <option value="Pro Console - $325+ CAD">Pro Console - $325+ CAD</option>
+    </select><br>
+
+    <label for="addons">Add-Ons:</label><br>
+    <textarea name="addons" rows="3" placeholder="e.g., extra controller, boot animation, etc." style="width: 100%; padding: 10px; margin: 8px 0;"></textarea><br>
+
+    <label for="customizations">Custom Requests / Theme Ideas:</label><br>
+    <textarea name="customizations" rows="3" placeholder="e.g., Zelda theme, red/black interface..." style="width: 100%; padding: 10px; margin: 8px 0;"></textarea><br>
+
+    <label for="address">Shipping Address:</label><br>
+    <textarea name="address" rows="3" required style="width: 100%; padding: 10px; margin: 8px 0;"></textarea><br>
+
+    <input type="submit" value="Submit Order" style="padding: 12px 24px; background-color: #0055ff; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+  </form>
+</div>
 
   <footer>
     &copy; 2025 B-Side Gaming. All rights reserved.
